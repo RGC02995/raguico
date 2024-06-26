@@ -1,0 +1,27 @@
+.nav-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.ul-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.li-style {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 25px;
+  transition: all 0.1s linear;
+}
+
+.li-style:hover {
+  color: rgb(34, 34, 34);
+  border-bottom: 1px solid black;
+}
