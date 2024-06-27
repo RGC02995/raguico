@@ -5,7 +5,7 @@ import { DefaultPage } from "../pages/default-page/DefaultPage";
 import { HomePage } from "../pages/HomePage";
 import { AboutMe } from "../pages/AboutMe";
 import { Proyects } from "../pages/Proyects";
-import { Experience } from "../pages/Proyects copy";
+import { Experience } from "../pages/Experience";
 import { Footer } from "../components/footer/Footer";
 
 export const AppRouter = () => {

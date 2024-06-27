@@ -1,0 +1,38 @@
+.section-style {
+  padding: 5em;
+  max-height: 100vh;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 1em;
+  margin-top: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  transition: all 1s linear;
+}
+
+.card:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.15);
+  background-color: white;
+  color: rgb(32, 34, 49);
+}

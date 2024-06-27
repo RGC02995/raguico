@@ -14,7 +14,7 @@
 
 body {
   min-height: 100dvh;
-  background: linear-gradient(to bottom right, #ffce00 20%, #ffa700);
+  background: linear-gradient(to bottom right, #ffce00, #ffa700);
 }
 
 input,
