@@ -1,6 +1,6 @@
 .section-style {
   padding: 5em;
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 .title {
@@ -20,7 +20,7 @@
 .card {
   width: 250px;
   height: 250px;
-  background-color: transparent;
+  background-color: #282828;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -31,8 +31,17 @@
 }
 
 .card:hover {
-  transition: transform 0.5s ease;
+  transition: transform 0.5s linear;
   transform: scale(1.15);
-  background-color: white;
+  background-color: transparent;
   color: rgb(32, 34, 49);
+}
+
+/*About Me*/
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 5em;
 }

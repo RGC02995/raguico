@@ -7,13 +7,19 @@ export const NavBar = () => {
       <nav className="nav-flex">
         <ul className="ul-flex">
           <li className="li-style">
-            <Link to="/aboutme">Sobre mí</Link>
+            <Link className="link-style" to="/aboutme">
+              Sobre mí
+            </Link>
           </li>
           <li className="li-style">
-            <Link to="/experience">Experiencia</Link>
+            <Link className="link-style" to="/experience">
+              Experiencia
+            </Link>
           </li>
           <li className="li-style">
-            <Link to="/proyects">Proyectos</Link>
+            <Link className="link-style" to="/proyects">
+              Proyectos
+            </Link>
           </li>
         </ul>
       </nav>

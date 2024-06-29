@@ -18,10 +18,17 @@
   list-style: none;
   padding-top: 20px;
   font-size: 25px;
-  transition: all 0.1s linear;
+  transition: all 0 linear;
 }
 
 .li-style:hover {
-  color: rgb(34, 34, 34);
-  border-bottom: 1px solid black;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.li-style:active {
+  a {
+    color: white;
+    border-bottom: 1px solid black;
+  }
 }
