@@ -39,9 +39,59 @@
 
 /*About Me*/
 
-.about-flex {
+.sections-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-flex-nowrap {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 5em;
+  /* flex-wrap: wrap; */
+}
+
+.about-flex-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 5em;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.background-technologies {
+  background-color: #282828;
+  padding: 5em;
+}
+
+.img-style {
+  height: 360px;
+}
+
+.description-style {
+  font-size: 40px;
+}
+
+/*Colors Text*/
+.black-colorText {
+  color: #000000;
+}
+
+.red-colorText {
+  color: red;
+}
+.big-text {
+  font-size: 100px;
+}
+@media screen and (max-width: 400px) {
+  .img-style {
+    height: 180px;
+  }
+
+  .description-style {
+    font-size: 20px;
+  }
 }
