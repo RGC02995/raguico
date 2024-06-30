@@ -1,6 +1,6 @@
 .container-footer {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .footer-style {
@@ -8,13 +8,13 @@
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 1rem;
+  padding-bottom: 1em;
 }
 
 .footer-text {
-  font-size: 0.9rem;
+  font-size: 2rem;
 
-  color: #000;
+  color: rgb(187, 181, 181);
 }
 
 .footer-text:hover {

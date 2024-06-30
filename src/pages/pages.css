@@ -62,6 +62,17 @@
   justify-content: center;
 }
 
+.about-flex-wrap-technology {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 5em;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  height: 350px;
+}
+
 .background-technologies {
   background-color: #282828;
   padding: 5em;
@@ -78,18 +89,26 @@
 /*Colors Text*/
 .black-colorText {
   color: #000000;
+  text-shadow: 3px 3px #282828;
 }
 
 .red-colorText {
   color: red;
 }
 .big-text {
-  font-size: 100px;
+  font-size: 4rem;
+  text-shadow: 3px 3px #282828;
 }
 
 .svg-style {
-  height: 64px;
-  transition: all 1s linear;
+  height: 90px;
+  transition: all 0.3s linear;
+}
+
+.svg-style:hover {
+  height: 150px;
+  padding: 1;
+  filter: drop-shadow(0 0 0.175rem white);
 }
 
 @media screen and (max-width: 400px) {
@@ -115,4 +134,18 @@
 
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes beat {
+  from {
+    filter: drop-shadow(0 0 0.75rem crimson);
+  }
+
+  to {
+    filter: drop-shadow(0 0 0 crimson);
+  }
+}
+
+.beat {
+  animation: beat 1s ease-in-out;
 }
