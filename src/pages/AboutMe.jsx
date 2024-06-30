@@ -1,7 +1,10 @@
 import "./pages.css";
 import img1 from "../../public/robot.png";
+import { renderComponent } from "../utils/renderComponent";
 
 export const AboutMe = () => {
+  const { isVisible } = renderComponent();
+
   return (
     <div className="sections-flex">
       <div className="about-flex-wrap">
@@ -20,16 +23,23 @@ export const AboutMe = () => {
         </p>
       </div>
 
-      <div className="about-flex-wrap background-technologies">
-        <h4>JavaScript</h4>
-        <h4>HTML</h4>
-        <h4>CSS</h4>
-        <h4>Sass</h4>
-        <h4>Node.js</h4>
-        <h4>React</h4>
-        <h4>MongoDB</h4>
-        <h4>BootStrap</h4>
-      </div>
+      {isVisible && (
+        <div
+          className={`about-flex-wrap background-technologies ${
+            isVisible && "fadeIn"
+          }`}
+        >
+          <img className="svg-style" src="../../public/svg/js.svg"></img>
+          <img className="svg-style" src="../../public/svg/html.svg"></img>
+          <img className="svg-style" src="../../public/svg/css.svg"></img>
+          <img
+            className="svg-style"
+            src="../../public/svg/sass-svgrepo-com.svg"
+          />
+          <img className="svg-style" src="../../public/svg/nodejs.svg" />
+          <img className="svg-style" src="../../public/svg/react.svg" />
+        </div>
+      )}
     </div>
   );
 };
