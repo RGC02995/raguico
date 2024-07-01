@@ -1,9 +1,9 @@
 import "./pages.css";
 import img1 from "../../public/robot.png";
-import { renderComponent } from "../utils/renderComponent";
+import { useRenderComponent } from "../hooks/useRenderComponent";
 
 export const AboutMe = () => {
-  const { isVisible } = renderComponent();
+  const { isVisible } = useRenderComponent();
 
   return (
     <div className="sections-flex">

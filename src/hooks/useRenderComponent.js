@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const renderComponent = () => {
+export const useRenderComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
