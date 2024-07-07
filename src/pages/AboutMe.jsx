@@ -1,6 +1,7 @@
 import "./pages.css";
 import img1 from "../../public/robot.png";
 import { useRenderComponent } from "../hooks/useRenderComponent";
+import { Technologies } from "../components/technologies/Technologies";
 
 export const AboutMe = () => {
   const { isVisible } = useRenderComponent();
@@ -23,23 +24,7 @@ export const AboutMe = () => {
         </p>
       </div>
 
-      {isVisible && (
-        <div
-          className={`about-flex-wrap-technology background-technologies ${
-            isVisible && "fadeIn"
-          }`}
-        >
-          <img className="svg-style" src="../../public/svg/js.svg"></img>
-          <img className="svg-style" src="../../public/svg/html.svg"></img>
-          <img className="svg-style" src="../../public/svg/css.svg"></img>
-          <img
-            className="svg-style"
-            src="../../public/svg/sass-svgrepo-com.svg"
-          />
-          <img className="svg-style" src="../../public/svg/nodejs.svg" />
-          <img className="svg-style" src="../../public/svg/react.svg" />
-        </div>
-      )}
+      {isVisible ? <Technologies /> : null}
     </div>
   );
 };

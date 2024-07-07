@@ -1,6 +1,8 @@
 .container-footer {
   position: relative;
-  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 61dvh;
 }
 
 .footer-style {

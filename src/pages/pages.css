@@ -71,6 +71,7 @@
   text-align: center;
   justify-content: center;
   height: 350px;
+  position: relative;
 }
 
 .background-technologies {
@@ -133,12 +134,12 @@
 }
 
 .fadeIn {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s linear;
 }
 
 @keyframes beat {
   from {
-    filter: drop-shadow(0 0 0.75rem crimson);
+    filter: drop-shadow(0 0 2rem crimson);
   }
 
   to {
@@ -147,5 +148,5 @@
 }
 
 .beat {
-  animation: beat 1s ease-in-out;
+  animation: beat 5s ease-in-out;
 }
