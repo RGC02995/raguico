@@ -48,6 +48,7 @@
   gap: 2rem;
   background-color: #282828;
   padding: 5em;
+  min-height: 350px;
 }
 
 .about-me__technologies-img {

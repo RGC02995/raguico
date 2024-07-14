@@ -43,6 +43,18 @@ export const AboutMe = () => {
           className="about-me__technologies-img"
           src="../../public/svg/react.svg"
         />
+        <img
+          className="about-me__technologies-img"
+          src="../../public/svg/axios.svg"
+        />
+        <img
+          className="about-me__technologies-img"
+          src="../../public/svg/bootstrap.svg"
+        />
+        <img
+          className="about-me__technologies-img"
+          src="../../public/svg/redux.svg"
+        />
       </div>
     </div>
   );
