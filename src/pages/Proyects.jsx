@@ -2,14 +2,11 @@ import "./pages.css";
 
 export const Proyects = () => {
   return (
-    <section className="section-style">
-      <div className="card-group">
-        <div className="card">Próximamente</div>
-        <div className="card">Próximamente</div>
-        <div className="card">Próximamente</div>
-        <div className="card">Próximamente</div>
-        <div className="card">Próximamente</div>
-      </div>
+    <section className="proyects">
+      <ul className="card-group">
+        <li className="card">Próximamente</li>
+        <li className="card">Próximamente</li>
+      </ul>
     </section>
   );
 };

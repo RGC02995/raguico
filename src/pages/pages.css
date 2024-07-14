@@ -1,4 +1,4 @@
-.section-style {
+.proyects {
   padding: 5em;
   max-height: 100%;
 }
@@ -37,50 +37,18 @@
   color: rgb(32, 34, 49);
 }
 
-/*About Me*/
-
-.sections-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-flex-nowrap {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 5em;
-  /* flex-wrap: wrap; */
-}
-
-.about-flex-wrap {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 5em;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-
-.about-flex-wrap-technology {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 5em;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  height: 350px;
-  position: relative;
-}
-
-.background-technologies {
-  background-color: #282828;
-  padding: 5em;
-}
-
+/*image and text*/
 .img-style {
   height: 360px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (width < 400px) {
+  .img-style {
+    height: 180px;
+  }
 }
 
 .description-style {
@@ -101,22 +69,7 @@
   text-shadow: 3px 3px #282828;
 }
 
-.svg-style {
-  height: 90px;
-  transition: all 0.1s linear;
-}
-
-.svg-style:hover {
-  height: 150px;
-  padding: 1;
-  filter: drop-shadow(0 0 0.175rem white);
-}
-
 @media screen and (max-width: 400px) {
-  .img-style {
-    height: 180px;
-  }
-
   .description-style {
     font-size: 20px;
   }
@@ -135,18 +88,4 @@
 
 .fadeIn {
   animation: fadeIn 1s linear;
-}
-
-@keyframes beat {
-  from {
-    filter: drop-shadow(0 0 2rem crimson);
-  }
-
-  to {
-    filter: drop-shadow(0 0 0 crimson);
-  }
-}
-
-.beat {
-  animation: beat 5s ease-in-out;
 }

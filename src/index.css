@@ -5,6 +5,14 @@
   color: #b3b7ba;
 }
 
+#root {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 *,
 *::before,
 *::after {
@@ -46,6 +54,17 @@ video,
 svg {
   height: auto;
   max-width: 100%;
+}
+
+.fade-in {
+  view-timeline-name: --timeline-render;
+  view-timeline-axis: block;
+
+  animation-timeline: --timeline-render;
+  animation-name: show;
+
+  animation-range: entry 15% cover 20%;
+  animation-fill-mode: both;
 }
 
 @media (prefers-reduced-motion: reduce) {

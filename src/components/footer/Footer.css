@@ -1,24 +1,17 @@
-.container-footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 61dvh;
-}
-
-.footer-style {
-  position: absolute;
-  bottom: 0;
+.footer {
   width: 100%;
   text-align: center;
-  padding-bottom: 1em;
+  padding: 3em;
 }
 
-.footer-text {
-  font-size: 2rem;
-
+.footer__text {
+  font-size: 1.5rem;
   color: rgb(187, 181, 181);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.footer-text:hover {
+.footer__text:hover {
   color: white;
 }
