@@ -19,42 +19,18 @@ export const AboutMe = () => {
       </p>
 
       <div className={`about-me__technologies fade-in`}>
+        <img className="about-me__technologies-img" src="/svg/js.svg"></img>
+        <img className="about-me__technologies-img" src="/svg/html.svg"></img>
+        <img className="about-me__technologies-img" src="/svg/css.svg"></img>
         <img
           className="about-me__technologies-img"
-          src="../../public/svg/js.svg"
-        ></img>
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/html.svg"
-        ></img>
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/css.svg"
-        ></img>
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/sass-svgrepo-com.svg"
+          src="/svg/sass-svgrepo-com.svg"
         />
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/nodejs.svg"
-        />
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/react.svg"
-        />
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/axios.svg"
-        />
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/bootstrap.svg"
-        />
-        <img
-          className="about-me__technologies-img"
-          src="../../public/svg/redux.svg"
-        />
+        <img className="about-me__technologies-img" src="/svg/nodejs.svg" />
+        <img className="about-me__technologies-img" src="/svg/react.svg" />
+        <img className="about-me__technologies-img" src="/svg/axios.svg" />
+        <img className="about-me__technologies-img" src="/svg/bootstrap.svg" />
+        <img className="about-me__technologies-img" src="/svg/redux.svg" />
       </div>
     </div>
   );

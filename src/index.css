@@ -63,7 +63,7 @@ svg {
   animation-timeline: --timeline-render;
   animation-name: show;
 
-  animation-range: entry 15% cover 20%;
+  animation-range: entry 100% cover 30%;
   animation-fill-mode: both;
 }
 
