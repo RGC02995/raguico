@@ -1,40 +1,5 @@
-.proyects {
-  padding: 5em;
-  max-height: 100%;
-}
-
 .title {
   font-size: 45px;
-}
-
-.card-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  padding: 1em;
-  margin-top: 2em;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  width: 250px;
-  height: 250px;
-  background-color: #282828;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 25px;
-  transition: all 1s linear;
-}
-
-.card:hover {
-  transition: transform 0.5s linear;
-  transform: scale(1.15);
-  background-color: transparent;
-  color: rgb(32, 34, 49);
 }
 
 /*image and text*/

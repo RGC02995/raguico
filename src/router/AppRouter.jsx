@@ -4,7 +4,7 @@ import { NavBar } from "../components/navbar/NavBar";
 import { DefaultPage } from "../pages/default-page/DefaultPage";
 import { HomePage } from "../pages/HomePage";
 import { AboutMe } from "../pages/about-me/AboutMe";
-import { Proyects } from "../pages/Proyects";
+import { Proyects } from "../pages/proyects/Proyects";
 import { Experience } from "../pages/Experience";
 import { Footer } from "../components/footer/Footer";
 

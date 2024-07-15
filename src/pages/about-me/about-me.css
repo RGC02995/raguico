@@ -23,6 +23,8 @@
   font-size: 40px;
   max-width: 50ch;
   padding-inline: 2rem;
+  text-align: justify;
+  font-size: clamp(1.25rem, 0.9932rem + 1.3699vw, 4.375rem);
 }
 
 .about-me__text--black {
