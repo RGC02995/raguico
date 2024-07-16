@@ -2,19 +2,87 @@
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: center;
+}
+
+.checkbox__label {
+  z-index: 1;
+  cursor: pointer;
+
+  .checkbox__label-img--menu {
+    display: block;
+  }
+
+  .checkbox__label-img--close {
+    display: none;
+  }
+}
+
+/* En CSS no se puede utilizar (al menos por ahora) una variable en la condición del @media */
+/* var(--breakpoint-mobile) === 768px */
+@media (width >= 768px) {
+  .checkbox__label {
+    display: none;
+  }
+}
+
+.checkbox:checked ~ .checkbox__label {
+  .checkbox__label-img--menu {
+    display: none;
+  }
+
+  .checkbox__label-img--close {
+    display: block;
+  }
+}
+
+.checkbox:checked ~ .navbar__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.navbar__list {
+.navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3.125rem;
+}
+
+/* En CSS no se puede utilizar (al menos por ahora) una variable en la condición del @media */
+/* var(--breakpoint-mobile) === 768px */
+@media (width < 768px) {
+  .navbar {
+    justify-content: flex-start;
+    padding-inline: 1rem;
+  }
+}
+
+.navbar__list {
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  background: var(--background-color);
+  list-style-type: none;
+}
+
+/* En CSS no se puede utilizar (al menos por ahora) una variable en la condición del @media */
+/* var(--breakpoint-mobile) === 768px */
+@media (width >= 768px) {
+  .navbar__list {
+    position: static;
+    min-height: 0;
+    background: var(--background-color);
+    margin: 0;
+    display: flex;
+    gap: 3.125rem;
+  }
 }
 
 .navbar__list-item {
-  list-style: none;
   font-size: 1.5rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
