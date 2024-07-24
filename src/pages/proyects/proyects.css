@@ -16,6 +16,10 @@
   background-color: #18151893;
 }
 
+.card:hover {
+  box-shadow: 0px 0px 30px -7px rgba(158, 152, 158, 1);
+}
+
 .card-image {
   width: 100%;
   height: auto;
@@ -25,4 +29,5 @@
   background-color: rgb(32, 32, 32);
   width: 100%;
   padding: 1em;
+  cursor: pointer;
 }

@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 //Components
 import { NavBar } from "../components/navbar/NavBar";
 import { DefaultPage } from "../pages/default-page/DefaultPage";
-import { HomePage } from "../pages/HomePage";
 import { AboutMe } from "../pages/about-me/AboutMe";
 import { Proyects } from "../pages/proyects/Proyects";
 import { Experience } from "../pages/Experience";
@@ -13,8 +12,7 @@ export const AppRouter = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/" element={<AboutMe />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/proyects" element={<Proyects />} />
 

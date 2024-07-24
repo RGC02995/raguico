@@ -9,14 +9,9 @@
 }
 
 .about-me__img {
-  height: 360px;
+  height: clamp(11.25rem, 11.798vw + 8.301rem, 40.5rem);
   width: auto;
-}
-
-@media (width < 400px) {
-  .about-me__img {
-    height: 180px;
-  }
+  margin-top: 5em;
 }
 
 .about-me__text {

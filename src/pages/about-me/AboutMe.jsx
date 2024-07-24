@@ -1,10 +1,13 @@
 import "./about-me.css";
-import img1 from "../../../public/robot.png";
 
 export const AboutMe = () => {
   return (
     <div className="about-me">
-      <img className="about-me__img" src={img1} alt="Imagen programador" />
+      <img
+        className="about-me__img"
+        src="/AboutMeImg.png"
+        alt="Imagen programador"
+      />
       <p className="about-me__text">
         <span className="about-me__text--black about-me__text--big">#</span> Mi
         nombre es Raúl, soy{" "}
