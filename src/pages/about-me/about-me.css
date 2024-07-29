@@ -9,9 +9,9 @@
 }
 
 .about-me__img {
-  height: clamp(11.25rem, 11.798vw + 8.301rem, 40.5rem);
+  height: clamp(15.25rem, 11.798vw + 8.301rem, 40.5rem);
   width: auto;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .about-me__text {
