@@ -46,7 +46,9 @@ export const NavBar = () => {
       anchor.addEventListener("click", handleAnchorClick);
     });
 
-    menuCheckbox.addEventListener("change", handleCheckboxChange);
+    if (menuCheckbox) {
+      menuCheckbox.addEventListener("change", handleCheckboxChange);
+    }
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
@@ -55,10 +57,10 @@ export const NavBar = () => {
       navbar.querySelectorAll("a").forEach((anchor) => {
         anchor.removeEventListener("click", handleAnchorClick);
       });
-
-      menuCheckbox.removeEventListener("change", handleCheckboxChange);
-
-      // mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      if (menuCheckbox) {
+        menuCheckbox.removeEventListener("change", handleCheckboxChange);
+      }
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, [mediaQuery]);
 
@@ -78,7 +80,6 @@ export const NavBar = () => {
             src="/svg/menu-white.svg"
             alt="open menu"
           />
-
           <img
             className="checkbox__label-img--close"
             src="/svg/close-white.svg"
