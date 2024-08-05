@@ -10,9 +10,7 @@ export const NavBar = () => {
   useEffect(() => {
     const menuCheckbox = menuCheckboxRef.current;
     const navbar = navbarRef.current;
-    console.log(navbar);
 
-    // Hace que en el body se pueda hacer scroll o no
     const hideOverFlow = (value) => {
       if (value) {
         window.scrollTo(0, 0);
@@ -25,20 +23,22 @@ export const NavBar = () => {
     const handleAnchorClick = () => {
       if (document.body.style.overflowY === "hidden") {
         hideOverFlow(false);
-        menuCheckbox.checked = false;
+        if (menuCheckbox) {
+          menuCheckbox.checked = false;
+        }
       }
     };
 
-    const handleCheckboxChange = (event) => {
-      event.target.checked ? hideOverFlow(true) : hideOverFlow(false);
+    const handleCheckboxChange = (e) => {
+      e.target.checked ? hideOverFlow(true) : hideOverFlow(false);
     };
 
-    const handleMediaQueryChange = (mediaQueryEvent) => {
-      console.log("CAMBIO DE TAMAÑO");
-      // matchMedia("(min-width: 768px)")
-      if (mediaQueryEvent.matches) {
+    const handleMediaQueryChange = (e) => {
+      if (e.matches) {
         hideOverFlow(false);
-        menuCheckbox.checked = false;
+        if (menuCheckbox) {
+          menuCheckbox.checked = false;
+        }
       }
     };
 
@@ -89,7 +89,7 @@ export const NavBar = () => {
 
         <ul className="navbar__list">
           <li className="navbar__list-item">
-            <Link to="/aboutme">Sobre mí</Link>
+            <Link to="/">Sobre mi­</Link>
           </li>
           <li className="navbar__list-item">
             <Link to="/experience">Experiencia</Link>
