@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 //Components
-import { NavBar } from "../components/navbar/NavBar";
 import { DefaultPage } from "../pages/default-page/DefaultPage";
 import { AboutMe } from "../pages/about-me/AboutMe";
 import { Proyects } from "../pages/proyects/Proyects";
@@ -10,7 +9,6 @@ import { Footer } from "../components/footer/Footer";
 export const AppRouter = () => {
   return (
     <>
-      <NavBar />
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/experience" element={<Experience />} />
