@@ -4,7 +4,6 @@ import "./about-me.css";
 export const AboutMe = () => {
   return (
     <>
-      <NavBar />
       <div className="about-me">
         <img
           className="about-me__img"

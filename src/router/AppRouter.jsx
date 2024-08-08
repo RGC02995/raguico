@@ -3,12 +3,13 @@ import { Route, Routes } from "react-router-dom";
 import { DefaultPage } from "../pages/default-page/DefaultPage";
 import { AboutMe } from "../pages/about-me/AboutMe";
 import { Proyects } from "../pages/proyects/Proyects";
-import { Experience } from "../pages/Experience";
+import { Experience } from "../pages/experience/Experience";
 import { Footer } from "../components/footer/Footer";
-
+import { NavBar } from "../components/navbar/NavBar";
 export const AppRouter = () => {
   return (
     <>
+      <NavBar />
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/experience" element={<Experience />} />
