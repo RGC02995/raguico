@@ -1,4 +1,3 @@
-import { NavBar } from "../../components/navbar/NavBar";
 import "./about-me.css";
 
 export const AboutMe = () => {

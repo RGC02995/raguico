@@ -1,0 +1,12 @@
+.paragraph__description {
+  color: white;
+  align-items: center;
+  padding: 2em;
+}
+
+.title__name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+}
