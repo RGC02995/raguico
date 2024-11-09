@@ -32,6 +32,7 @@
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 
   .repo-github__button {
     background-color: transparent;
@@ -43,6 +44,6 @@
     padding-left: 0.5em;
   }
   .repo-github__button:hover {
-    border: 2px solid white;
+    border: 1px solid white;
   }
 }

@@ -1,6 +1,7 @@
 .paragraph__description {
   color: white;
   align-items: center;
+  text-align: center;
   padding: 2em;
 }
 

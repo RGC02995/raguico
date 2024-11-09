@@ -1,20 +1,10 @@
 import "./proyects.css";
+import { Button } from "./components/Button";
 
 export const Proyects = () => {
   return (
     <ul className="card-group">
-      <li className="card">
-        <img className="card-image" src="/svg/css.svg" alt="css" />
-        <div>
-          <p className="card__paragraph">
-            CSS
-            <div>
-              <button className="repo-github__button">Github</button>
-              <button className="repo-github__button">Github</button>
-            </div>
-          </p>
-        </div>
-      </li>
+      <Button />
     </ul>
   );
 };

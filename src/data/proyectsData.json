@@ -1,0 +1,16 @@
+{
+    "proyectos": [
+        {
+            "nombre": "Tic Tac Toe",
+            "urlGit": "https://github.com/RGC02995/tic-tac-toe",
+            "urlProyecto": "falta añadir",
+            "img": "/tic-tac-toe.svg"
+        },
+        {
+            "nombre": "Poke Api",
+            "urlGit": "proximamente",
+            "urlProyecto": "proximamente",
+            "img": "/pokemon.jpg"
+        }
+    ]
+}
