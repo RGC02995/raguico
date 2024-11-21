@@ -1,6 +1,6 @@
 import lista from "../../../data/proyectsData.json";
 
-export const Button = () => {
+export const Card = () => {
   return (
     <ul className="card-group">
       {lista.proyectos.map((proyecto) => {
@@ -17,7 +17,7 @@ export const Button = () => {
                 src={proyecto.img}
                 alt="imageProyect"
               />
-              <div>
+              <div className="footer-card__div">
                 <p className="card__paragraph">
                   {proyecto.nombre}
                   <div>

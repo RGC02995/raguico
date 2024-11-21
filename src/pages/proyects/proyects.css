@@ -23,6 +23,7 @@
 .card-image {
   width: 100%;
   height: auto;
+  min-height: 84%;
 }
 
 .card__paragraph {
@@ -46,4 +47,7 @@
   .repo-github__button:hover {
     border: 1px solid white;
   }
+}
+
+.footer-card__div {
 }

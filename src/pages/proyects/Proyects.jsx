@@ -1,10 +1,10 @@
 import "./proyects.css";
-import { Button } from "./components/Button";
+import { Card } from "./components/Card";
 
 export const Proyects = () => {
   return (
     <ul className="card-group">
-      <Button />
+      <Card />
     </ul>
   );
 };

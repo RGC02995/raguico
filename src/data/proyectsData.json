@@ -8,9 +8,15 @@
         },
         {
             "nombre": "Poke Api",
-            "urlGit": "proximamente",
+            "urlGit": "https://github.com/RGC02995/poke-pokeapi",
             "urlProyecto": "proximamente",
             "img": "/pokemon.jpg"
+        },
+        {
+            "nombre": "Cookeate",
+            "urlGit": "https://github.com/RGC02995/Cookeate",
+            "urlProyecto": "falta añadir",
+            "img": "/Cookeate.png"
         }
     ]
 }
