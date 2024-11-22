@@ -9,6 +9,16 @@ export const AboutMe = () => {
           src="/AboutMeImg.png"
           alt="Imagen programador"
         />
+
+        <div className="ref--doc__buttons">
+          <button>
+            <a href="">GitHub</a>
+          </button>
+          <button>
+            <a href="">CV Download</a>
+          </button>
+        </div>
+
         <p className="about-me__text">
           <span className="about-me__text--black about-me__text--big">#</span>{" "}
           Mi nombre es Raúl, soy{" "}

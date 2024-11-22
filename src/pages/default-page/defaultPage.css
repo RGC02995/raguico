@@ -1,0 +1,15 @@
+.background-title__div {
+  background-color: rgba(0, 0, 0, 0.2); /* Rojo con 20% de opacidad */
+  border-radius: 10px;
+  margin: 0 30px;
+  padding: 20px;
+  z-index: 0;
+
+  .title__h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+  }
+}

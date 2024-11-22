@@ -6,12 +6,35 @@
   align-items: center;
   gap: 8rem;
   min-height: calc(100vh - 80px - 96px);
+  margin-bottom: 0;
 }
 
 .about-me__img {
   height: clamp(15.25rem, 11.798vw + 8.301rem, 40.5rem);
   width: auto;
   margin-top: 2em;
+}
+
+.ref--doc__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  overflow: hidden;
+}
+.ref--doc__buttons button {
+  margin: 0 1rem;
+  padding: 10px;
+}
+
+@media screen and (min-width: 468px) {
+  .ref--doc__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+  }
 }
 
 .about-me__text {
