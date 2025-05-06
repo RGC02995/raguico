@@ -13,6 +13,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 15px;
+  height: 420px;
   background-color: #18151893;
 }
 
@@ -22,7 +23,7 @@
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 0;
   min-height: 84%;
 }
 

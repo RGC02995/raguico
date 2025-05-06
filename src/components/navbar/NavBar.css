@@ -59,7 +59,7 @@
 }
 
 .navbar__list {
-  min-height: 100vh;
+  min-height: 120vh;
   position: absolute;
   left: 0;
   right: 0;
